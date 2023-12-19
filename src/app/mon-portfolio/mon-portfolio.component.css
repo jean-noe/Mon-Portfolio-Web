@@ -1,0 +1,148 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color:#003147;
+}
+.projets{
+    margin : 5rem;
+    height : 90%;
+}
+.l3 {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    margin-bottom: 1rem;
+
+    article:nth-child(1){
+        width: 60%;
+        padding-left: 1rem;   
+    }
+    article:nth-child(2){
+        background-image: url('https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?b=1&s=612x612&w=0&k=20&c=-wTGItN4uscm4sy8X07O4YXhyl2xOBnc9DfzMyUKxJ0=');
+        /*background-size: cover;*/
+        width: 50%;
+        height: 80vh;
+        background-repeat:round;
+        background-size: contain;
+        background-position: right;
+        border-radius: 50%;
+    }
+    .image img{
+        width: 310px;
+        height: 310px;
+    }
+    .image{
+        width: 350px;
+        height: 350px;
+    }
+    .image1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--first-color);
+    }
+}
+
+.l2{
+    margin-top: 2rem;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .article:nth-child(2) {
+        padding-left: 14rem;
+        width: 45%;
+        height: 80vh;
+        background-image: url('/assets/images/IMG_20210318_141051.jpg');
+        background-repeat:round;
+        background-size: contain;
+        /* height: 100%; */
+        background-position: right;
+        border-radius: 50%;
+    }
+    .image img{
+        width: 310px;
+        height: 310px;
+    }
+    
+    .image {
+        /*border: 10px solid var(--first-color);
+        border-radius: 50%;*/
+        width: 310px;
+        height: 310px; 
+    }
+    
+    .image1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--first-color);
+    }
+    .article:nth-child(1) {
+        margin-left: 2rem;
+    }
+    .l2-end {
+        margin: auto;
+        width: 310px;
+        overflow: auto;
+    }
+}
+
+.l1{
+    margin-top: 2rem;
+    /*border: solid 2px var(--first-color);*/
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    margin-bottom: 1rem;
+
+    article:nth-child(1) {
+        /*border: solid 2px var(--first-color);*/
+        width: 60%;
+        padding-left: 1rem;
+    }
+    .article:nth-child(2){
+         /*border: solid 2px var(--first-color);*/
+         padding-left: 2rem;
+         width: 50%;
+         height: 80vh;
+         background-image: url('/assets/images/IMG_20200213_142607.jpg');
+         background-repeat:round;
+         background-size: contain;
+         /* height: 100%; */
+         background-position: right;
+         border-radius: 50%;
+    }
+    .image img{
+        width: 310px;
+        height: 310px;
+    }
+    
+    .image {
+        /*border: 10px solid var(--first-color);
+        border-radius: 50%;*/
+        width: 310px;
+        height: 310px;
+    }
+    
+    .image1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--first-color);
+    }
+    .article:nth-child(1), p{
+        margin: 2rem;
+    }
+}
+
+
