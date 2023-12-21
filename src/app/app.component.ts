@@ -8,12 +8,11 @@ import { MonPortfolio } from './modeles/mon-portfolio.modul';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  monBlock1! : MonPortfolio;
-  monBlock2! : MonPortfolio;
-  monBlock3! : MonPortfolio;
+  monBlocks: MonPortfolio[] = [];
 
   ngOnInit(): void {
-    this.monBlock1 = new MonPortfolio(
+    this.monBlocks.push(
+      new MonPortfolio(
       'Projet : Licence Professionnelle',
       `Création d'un carnet de suivie virtuel pour étudiant(s)(es) ingénieurs de L'EISINE`,
       new Date(),
@@ -36,10 +35,9 @@ export class AppComponent implements OnInit {
       restant pour le remplir, qui l’a rempli ou pas. Le responsable de formation peut choisir de débloquer un formulaire non
       rempli dans les temps ou un formulaire déjà rempli, pour y faire des corrections.`,
       'https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?b=1&s=612x612&w=0&k=20&c=-wTGItN4uscm4sy8X07O4YXhyl2xOBnc9DfzMyUKxJ0='
-    );
-
-    this.monBlock2 = new MonPortfolio(
-      `Projet : Fin d'étude de BTS`,
+      ),
+      new MonPortfolio(
+        `Projet : Fin d'étude de BTS`,
       'Ruche connectée',
       new Date(),
       `La surveillance à distance des ruches est intéressante à plusieurs niveaux :
@@ -62,16 +60,20 @@ export class AppComponent implements OnInit {
       mise en place du serveur Web pour l’échange des paramètres et modélisation 
       de la base de données de sauvegarde.`,
      'assets/images/IMG_20210318_141041.jpg'
-    );
-
-    this.monBlock3 = new MonPortfolio(
-      'Projet : BTS 1',
+      ),
+      new MonPortfolio('Projet : BTS 1',
       'Girouette',
       new Date(),
       `Le système doit permettre de donner l’orientation du vent.
       On doit donner l’information sur un afficheur et l’envoyer sur un smartphone, via une connexion Bluetooth + application Android App Inventor.
       Eventuellement crée une page graphique sous Processing.`,
-      'assets/images/IMG_20200206_163025.jpg'
+      'assets/images/IMG_20200206_163025.jpg'),
+      new MonPortfolio(
+        'Jean-Noé',
+        'Bonjour',
+        new Date(),
+        'jlbjbjbljbljl',
+        'assets/images/IMG_20210318_141041.jpg')
     );
   }
   
