@@ -1,0 +1,23 @@
+<nav class="navbar mt-5 ">
+    <div class="container">
+        <div class="navbar-left">
+            <a routerLink="">
+                <img src="assets/images/Fichier 1.png" alt="">
+            </a>
+        </div>
+
+        <div class="navbar-right text-dark ">
+            <ul>
+                <li>
+                    <a routerLink="" routerLinkActive="Active" [routerLinkActiveOptions]="{ exact: true }">ACCUEIL</a>
+                </li>
+                <li>
+                    <a routerLink="Projets" routerLinkActive="Active">PROJETS</a>
+                </li>
+                <li>
+                    <a routerLink="Contact" routerLinkActive="Active">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

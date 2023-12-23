@@ -1,0 +1,10 @@
+.footer--little{
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    margin-top: 9.5rem;
+}
+
+.footer--little h4{
+    color: white;
+}
