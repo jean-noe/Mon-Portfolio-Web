@@ -7,4 +7,3 @@ export class MonPortfolio {
         public imageUrl: string) {
     }
   }
-  

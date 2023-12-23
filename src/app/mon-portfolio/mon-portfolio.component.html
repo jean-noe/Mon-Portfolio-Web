@@ -1,57 +1,17 @@
 
 <div class="projets">
-    <div class="l3" [ngClass]="'l3'">
+    <div *ngFor="let portfolio of monPortfolio" [ngClass]="getPortfolioClass(portfolio)">
         <article>
-            <h1>{{monPortfolio.titre}}</h1>
-            <h2>{{monPortfolio.description}}</h2>
-            <p>Mis en ligne le : {{monPortfolio.createPortfolio}}</p>
-            <p>{{monPortfolio.resume}}</p>
+            <h1>{{portfolio.titre}}</h1>
+            <h2>{{portfolio.description}}</h2>
+            <p>Mis en ligne le : {{portfolio.createPortfolio}}</p>
+            <p>{{portfolio.resume}}</p>
         </article>
    
         <article>
             <div class="image">
-                <img [src]="monPortfolio.imageUrl" [alt]="monPortfolio.titre" class="image1">
+                <img [src]="portfolio.imageUrl" [alt]="portfolio.titre" class="image1">
             </div>
         </article>
     </div>
-    <!-- <div class="l2">
-        <div class="l2-left">
-            <div class="image2">
-                <img [src]="monBlock2.imageUrl" [alt]="monBlock2.titre" class="l2-left--image2">
-            </div>
-        </div>
-        <div class="l2-right">
-            <h1>{{monBlock2.titre}}</h1>
-            <h2>{{monBlock2.description}}</h2>
-            <p>Mis en ligne le : {{monBlock2.createPortfolio}}</p>
-            <p>{{monBlock2.resume}}</p>
-        </div>
-    </div>
-    <div class="l1">
-        <div class="l1-left">
-            <h1>{{monBlock3.titre}}</h1>
-            <h2>{{monBlock3.description}}</h2>
-            <p>Mis en ligne le : {{monBlock3.createPortfolio}}</p>
-            <p>
-               {{monBlock2.resume}}
-            </p> -->
-            <!-- <div class="l2-end">
-                <div class="image3">
-                    <img src="/assets/images/IMG_20200206_163021.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200213_142607.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200213_142611.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200213_142623.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200206_163021.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200213_142607.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200213_142611.jpg" alt="projet">
-                    <img src="/assets/images/IMG_20200213_142623.jpg" alt="projet">
-                </div>
-            </div> 
-        </div>
-        <div class="l1-right">
-            <div class="image4">
-                <img [src]="monBlock3.imageUrl" [alt]="monBlock3.titre" class="l1-right--image4">
-            </div>
-        </div>
-    </div>-->
 </div>

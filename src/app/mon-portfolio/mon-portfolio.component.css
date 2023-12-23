@@ -55,8 +55,9 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    flex-direction: row-reverse;
 
-    .article:nth-child(2) {
+    article:nth-child(2) {
         padding-left: 14rem;
         width: 45%;
         height: 80vh;
@@ -86,7 +87,7 @@
         border-radius: 50%;
         border: 2px solid var(--first-color);
     }
-    .article:nth-child(1) {
+    article:nth-child(1) {
         margin-left: 2rem;
     }
     .l2-end {
@@ -109,7 +110,7 @@
         width: 60%;
         padding-left: 1rem;
     }
-    .article:nth-child(2){
+    article:nth-child(2){
          /*border: solid 2px var(--first-color);*/
          padding-left: 2rem;
          width: 50%;
