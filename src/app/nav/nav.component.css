@@ -16,6 +16,7 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-right: 5px; */
 }
 .navbar-left img{
     width: 15%;
